@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Links</title>
+    <style>
+        #topNav {
+            border-radius: 0;
+        }
+        #footer {
+            border-radius: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <article class="container-fluid" id="main">
+        <section class="row">
+            <nav id="topNav" class="navbar navbar-inverse">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed"
+                                data-toggle="collapse" data-target="#linkNavTop" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">LINKER</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="linkNavTop">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a id="linksNum" href="#"><span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a id="tagsNum" href="#"></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="showTime">...</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </section>
+        <section class="row">
+            <div id="tagsList" class="col-md-2 col-lg-2"></div>
+            <div class="col-md-8 col-lg-8">
+                <div class="container-fluid">
+                    <div class="row" id="addNewLink">
+                        <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
+                            <form class="form-horizontal col-md-offset-2 col-md-8 col-lg-8 col-sm-12 col-xs-12" id="newLinkForm" method="post">
+                                <div class="form-group">
+                                    <label for="category" class="col-sm-2 control-label">Category</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="category" placeholder="Category">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="link" class="col-sm-2 control-label">Link</label>
+                                    <div class="col-sm-10">
+                                        <input type="url" class="form-control" id="link" placeholder="Link">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description" class="col-sm-2 control-label">Description</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="description" placeholder="Description ...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="owner" class="col-sm-2 control-label">Owner</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="owner" placeholder="Owner ...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tags" class="col-sm-2 control-label">Tags</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="tags" placeholder="Tags ...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default" id="saveLink">Register Link</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-md-offset-2 col-md-8 col-lg-8">
+                            <div class="table-responsive col-xs-12 col-sm-12" id="showAllLinks"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <nav id="footer" class="navbar navbar-inverse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">LINKER <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </nav>
+        </section>
+    </article>
+
+    <script src="/public/main.js"></script>
+</body>
+</html>
